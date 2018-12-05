@@ -1,2 +1,10 @@
+<mat-checkbox
+  #showDetails
+  [value]=""
+  [checked]="isChecked"
+  (change)="onChange($event)"
+  >Check me!</mat-checkbox>
+
+<div *ngIf="showDetails.checked">X-Team Check Box</div>
 
 <router-outlet></router-outlet>

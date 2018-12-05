@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'materialDesignX';
+  isChecked = true;
+
+  onChange($event) {
+    console.log($event);
+  }
 }
